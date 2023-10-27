@@ -1,18 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import { HashRouter } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
-import { UserSignupPage } from './pages/UserSignupPage';
-import { LoginPage } from './pages/LoginPage';
-import * as apiCalls from './api/apiCalls';
+import App from './containers/App';
+import { Provider } from 'react-redux';
+import configureStore from './redux/configureStore';
 
-const actions = {
-  postLogin: apiCalls.login
-};
+const store = configureStore();
 
 ReactDOM.render(
-  <LoginPage actions={actions} />,
+  <Provider store={store}>
+    <HashRouter>
+      <App />
+    </HashRouter>
+  </Provider>,
   document.getElementById('root')
 );
 

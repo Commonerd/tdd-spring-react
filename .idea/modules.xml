@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/hoaxify-backend/hoaxify.iml" filepath="$PROJECT_DIR$/hoaxify-backend/hoaxify.iml" />
+=======
+>>>>>>> 1d4a5873ebd744a9f5f42bd4f5e4da70531b960a
       <module fileurl="file://$PROJECT_DIR$/.idea/tdd-spring-react.iml" filepath="$PROJECT_DIR$/.idea/tdd-spring-react.iml" />
     </modules>
   </component>
